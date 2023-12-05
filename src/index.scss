@@ -1,0 +1,32 @@
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+
+.expense-list {
+    border: 1px solid #dedede;
+    border-radius: 6px;
+    .expense-item {
+        padding: 10px;
+        border-bottom: 1px solid;
+        display: flex;
+        justify-content: space-between;
+        &:last-child {
+            border-bottom-width: 0;
+        }
+        &.debit {
+            border-left: 3px solid red;
+        }
+        &.credit {
+            border-left: 3px solid green;
+        }
+    }
+}
+
+.analytics-block,
+.add-transaction-block,
+.expense-listing {
+    border: 1px solid #dedede;
+    border-radius: 8px;
+    background: #FFF;
+    padding: 10px;
+    margin-bottom: 15px;
+}
